@@ -1,14 +1,11 @@
 .weather-app {
   background-color:#FFF8F3;
-  max-width: 540px;
+  max-width: 500px;
   min-height: 100vh;
+ 
   padding:0.5em;
   border: 1px solid rgb(240, 240, 240);
   border-radius: 10px;
-}
-
-.searchBar {
-  padding:0.5rem 0.5rem 1.5rem;
 }
 
 .search-form {
@@ -16,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   border-radius: 200px;
-  width: 200px;
 }
 
 .city-input {
@@ -27,6 +23,23 @@
   font-size:0.5 rem;
   padding:0.5rem 0 0.5rem 0.5rem;
   outline: none;
+}
+
+.search-button{
+min-width:38px;
+min-height:38px;
+color:#707481;
+border:0.8px solid rgb(224, 217, 217);
+border-radius:60px;
+font-size:1rem;
+font-weight: 900;
+display:table;
+background-color: transparent;
+@include mq(768px) {
+    font-size:1.5rem;
+    min-width:64px;
+    mid-height:64px;
+}
 }
 
 h1 {
@@ -49,15 +62,6 @@ h1 {
   top:-10px;
 }
 
-.search-button{
-color:#222633;
-letter-spacing:0.2em;
-font-weight: 900;
-display:center;
-border:none;
-border-radius:80px;
-background-color: none;
-}
 
 a {
   text-decoration: none;
