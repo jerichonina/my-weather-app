@@ -11,27 +11,28 @@
    <title>Responsive Weather App</title>
   </head>
   <body>
-  <div class="container">
-  <div class="weather-app">
+    <main> 
+      <div class="container">
+      <div class="weather-app">
 
-  <section id="search-form" class="search-form">
-   <form class = "search-bar" id="search-bar">
-     <input  id="city-input"  class="city-input" type="text", placeholder="Enter your favourite city" autofocus="on" autocomplete="off" class="form-control shadow-sm" /> 
-      <button id="search-button" class="search-button">
-      <i class="fa-solid fa-magnifying-glass"></i>
-      </button>
-   </spans>
+      <section id="search-form" class="search-form">
+          <form class = "search-bar" id="search-bar">
+          <input  id="city-input"  class="city-input" type="text", placeholder="Enter your favourite city" autofocus="on" autocomplete="off" class="form-control shadow-sm" /> 
+         <button id="search-button" class="search-button">
+         <i class="fa-solid fa-magnifying-glass"></i>
+       </button>
    </form>
   </section>
+  
+  <section>
+    <div id="date" class="date"></div>
+  </section>
 
-  <ul >
-      <li id="date" class="date"></li>
-      <li id="weather-description" class="weather-description"></li>
-  </ul>
-
-  <i class="fa-solid fa-map-pin fa-2x"></i>  
-   <h1 id="city" class="city" style="display:inline"></h1>
-
+  <h1>
+    <div id="city" class="city" style="display:inline"></div>
+  </h1>
+  <div id="weather-description" class="weather-description"></div>
+  
   <div class="row">
     <div class="col-8">
        <img src="image/rain.png" class ="weather-icon" width="80">
@@ -57,37 +58,37 @@
     <div class="col-2">
       <div class="column">Wed</div>
       <div class="column"><img src="image/sun.png" width="40"></div>
-      <div class="column">18°C - 28°C</div>
+      <div class="column">18°C - 28°F</div>
     </div>
 
     <div class="col-2">
       <div class="column">Thu</div>
       <div class="column"><img src="image/rain.png" width="40"></div>
-      <div class="column">18°C - 28°C</div>
+      <div class="column">18°C - 28°F</div>
     </div>
 
     <div class="col-2">
       <div class="column">Fri</div>
       <div class="column"> <img src="image/sun.png" width="40"></div>
-      <div class="column">18°C - 28°C</div>
+      <div class="column">18°C - 28°F</div>
     </div>
 
     <div class="col-2">
       <div class="column">Sat</div>
       <div class="column"> <img src="image/rain.png" width="40"></div>
-      <div class="column">18°C - 28°C</div>
+      <div class="column">18°C - 28°F</div>
     </div>
 
     <div class="col-2">
       <div class="column">Sun</div>
       <div class="column"> <img src="image/rain.png" width="40"></div>
-      <div class="column">18°C - 28°C</div>
+      <div class="column">18°C - 28°F</div>
     </div>
 
     <div class="col-2">
       <div class="column">Mon</div>
       <div class="column"> <img src="image/sun.png" width="40"></div>
-      <div class="column">18°C - 28°C</div>
+      <div class="column">18°C - 28°F</div>
     </div>
 
   </div>
@@ -97,6 +98,7 @@
   </div>
   <a href="https://github.com/jerichonina/my-weather-app/tree/main" class="open-source-code" target="blank">Open source code</a>
   <span>by Jericho Li</span>
+  </main>
 </body>
 <script src="src/index.js"></script>
 </html>
