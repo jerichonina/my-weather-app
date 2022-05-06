@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width", initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css" />
+   <script src="https://kit.fontawesome.com/cbf78f61b2.js" crossorigin="anonymous" src="src/index.js"></script> 
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <title>Responsive Weather App</title>
+  </head>
+  <body>
+  <div class="container">
+  <div class="weather-app">
+
+  <section id="searchBar" class="searchBar">
+   <form class = "search-form" id="search-form">
+     <input  id="city-input"  class="city-input" type="text", placeholder="Enter a location" autofocus="on" autocomplete="off" class="form-control shadow-sm" /> 
+      <button id="search-button" class="search-button">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+   </spans>
+   </form>
+  </section>
+
+  <ul >
+      <li id="date" class="date"></li>
+      <li id="weather-description" class="weather-description"></li>
+  </ul>
+
+  <i class="fa-solid fa-map-pin fa-2x"></i>  
+   <h1 id="city" class="city" style="display:inline"></h1>
+
+  <div class="row">
+    <div class="col-9">
+       <img src="image/rain.png" class ="weather-icon" width="80">
+       <span class = "temperature" id="temperature"></span>
+        <span class="temperature-icon">
+        <a href="#" class="celsius-link" id="celsius-link">°C</a> 
+        | 
+        <a href="#" class="fahrenheit-link" id="fahrenheit-link">°F </a>  
+      </span>
+    </div>
+    <div class="col-3">
+      <ul>
+        <li><strong>Feels like:</strong> <span id="feels-like" class="feels-like"></span>°C</li>
+        <li><strong>Humidity: </strong><span  id="humidity" class="humidity"></span>%</li>
+        <li><strong>Wind: </strong><span id="wind" class="wind"></span>km/h</li>
+       </ul>
+    </div>
+  <br />
+
+
+  <h2>
+  <div class="row">
+    <div class="col-2">
+      <div class="column">Wed</div>
+      <div class="column"><img src="image/sun.png" width="40"></div>
+      <div class="column">18°C - 28°C</div>
+    </div>
+
+    <div class="col-2">
+      <div class="column">Thu</div>
+      <div class="column"><img src="image/rain.png" width="40"></div>
+      <div class="column">18°C - 28°C</div>
+    </div>
+
+    <div class="col-2">
+      <div class="column">Fri</div>
+      <div class="column"> <img src="image/sun.png" width="40"></div>
+      <div class="column">18°C - 28°C</div>
+    </div>
+
+    <div class="col-2">
+      <div class="column">Sat</div>
+      <div class="column"> <img src="image/rain.png" width="40"></div>
+      <div class="column">18°C - 28°C</div>
+    </div>
+
+    <div class="col-2">
+      <div class="column">Sun</div>
+      <div class="column"> <img src="image/rain.png" width="40"></div>
+      <div class="column">18°C - 28°C</div>
+    </div>
+
+    <div class="col-2">
+      <div class="column">Mon</div>
+      <div class="column"> <img src="image/sun.png" width="40"></div>
+      <div class="column">18°C - 28°C</div>
+    </div>
+
+  </div>
+</h2>
+
+   </div>
+  </div>
+</body>
+<script src="src/index.js"></script>
+</html>
+

@@ -1,0 +1,86 @@
+.weather-app {
+  background-color:#FFF8F3;
+  max-width: 540px;
+  min-height: 100vh;
+  padding:0.5em;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.searchBar {
+  padding:0.5rem 0.5rem 1.5rem;
+}
+
+.search-form {
+  margin-bottom:20px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 200px;
+  width: 200px;
+}
+
+.city-input {
+  flex-grow: 1;
+  text-align:start;
+  border:none;
+  border-radius: 200px;
+  font-size:0.5 rem;
+  padding:0.5rem 0 0.5rem 0.5rem;
+  outline: none;
+}
+
+h1 {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #0c305c;
+  padding: 0.5em;
+}
+
+.temperature{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
+  color:#1C6DD0;
+  vertical-align:bottom;
+}
+
+.temperature-icon {
+  position:relative;
+  top:-10px;
+}
+
+.search-button{
+color:#222633;
+letter-spacing:0.2em;
+font-weight: 900;
+display:center;
+border:none;
+border-radius:80px;
+background-color: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding:0.5em;
+  line-height:20px;
+  font-size:15px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(83, 63, 63);
+  margin-bottom:30px;
+}
+
+h2 {
+  font-size: 13px;
+  text-align: center;
+  line-height: 35px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #414241;
+}
+
+img {
+  display:inline-block;
+}
