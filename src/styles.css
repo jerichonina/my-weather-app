@@ -1,13 +1,12 @@
 .weather-app {
   max-width: 500px;
   min-height: 100vh;
-  margin:20px auto;
+  margin:10px auto;
   background-color:#FFF8F3;
-  padding:0.5em;
+  padding: 8px;
   border: 1px solid rgb(240, 240, 240);
   border-radius: 10px;
 }
-
 
 .search-bar {
   display: flex;
@@ -41,35 +40,45 @@ i {
   font-size:1.6rem;
 }
 
-
 form:hover {
   box-shadow: 1px 2px 3px rgb(167, 166, 166);
 }
 
-.temperature{
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 55px;
-  color:#1C6DD0;
-  vertical-align:top;
+.date{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding:8px;
+  margin:0;
+  color: rgb(122, 119, 119);
 }
 
 h1 {
-  margin:40px auto;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size:45px;
-}
-
-.date, .weather-description{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin:30px auto;
+  text-align: center;
+  font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
+  color:#43464e;
+  line-height:35px;
 }
 
 .weather-description {
   font-size: 20px;
-  margin-bottom: 20px;
+}
+
+.weather-widget {
+  padding:8px;
+  vertical-align:sub;
+}
+
+.temperature{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 60px;
+  color:#1C6DD0;
+
 }
 
 .temperature-icon {
-  top:-10px;
+  position:relative;
+  top:-34px;
 }
 
 a {
@@ -94,6 +103,7 @@ h2 {
   color: #414241;
 }
 
-img {
-  display:inline-block;
+.open-source-code {
+  text-align:center;
+  
 }
