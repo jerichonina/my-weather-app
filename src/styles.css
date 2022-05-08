@@ -55,7 +55,7 @@ h1 {
   margin:30px auto;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   color:#43464e;
   line-height:35px;
 }
@@ -66,18 +66,21 @@ h1 {
 
 .weather-widget {
   padding:8px;
-  vertical-align:sub;
+  vertical-align:middle;
 }
 
-.temperature{
+p {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 60px;
   color:#1C6DD0;
-
+  text-align: center;
+  margin:30px auto;
+  
 }
 
 .temperature-icon {
   position:relative;
+  font-size:16px;
   top:-34px;
 }
 
@@ -105,5 +108,4 @@ h2 {
 
 .open-source-code {
   text-align:center;
-  
 }

@@ -27,27 +27,23 @@
 
   <h1>
     <div id="city" class="city"></div>
-    <div id="weather-description" class="weather-description"></div>
+    <img src="image/rain.png" alt="weather-widget" class="weather-widget"  width="60" />
+    <span id="weather-description" class="weather-description"></span>
+    <p>
+        <span class = "temperature" id="temperature"></span>
+        <span class="temperature-icon">
+          <a href="#" class="celsius-link" id="celsius-link">°C</a> 
+          | 
+          <a href="#" class="fahrenheit-link" id="fahrenheit-link">°F </a>  
+        </span> 
+      </p>
   </h1>
-  
-  <div class="row">
-    <div class="col-8">
-      <img src="image/rain.png" alt="weather-widget" class="weather-widget" width="80" />
-      <span class = "temperature" class="float-left" id="temperature"></span>
-      <span class="temperature-icon">
-        <a href="#" class="celsius-link" id="celsius-link">°C</a> 
-        | 
-        <a href="#" class="fahrenheit-link" id="fahrenheit-link">°F </a>  
-      </span> 
-    </div>
-
-    <div class="col-4">
+    
       <ul>
         <li><strong>Feels like:</strong> <span id="feels-like" class="feels-like"></span>°C</li>
         <li><strong>Humidity: </strong><span  id="humidity" class="humidity"></span>%</li>
         <li><strong>Wind: </strong><span id="wind" class="wind"></span>km/h</li>
        </ul>
-    </div>
   <br />
 
   <h2>
