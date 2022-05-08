@@ -58,6 +58,7 @@ h1 {
   font-size: 30px;
   color:#43464e;
   line-height:35px;
+  margin-bottom:10px;
 }
 
 .weather-description {
@@ -69,13 +70,14 @@ h1 {
   vertical-align:middle;
 }
 
-p {
+h2 {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 60px;
-  color:#1C6DD0;
   text-align: center;
-  margin:30px auto;
-  
+  color:#1C6DD0;
+}
+
+.temperature{
+  font-size: 60px;
 }
 
 .temperature-icon {
@@ -98,7 +100,7 @@ ul {
   margin-bottom:30px;
 }
 
-h2 {
+h3 {
   font-size: 13px;
   text-align: center;
   line-height: 35px;
