@@ -40,10 +40,11 @@ li.innerHTML = formatDate(currentTime);
 function showWeatherCondition(response) {
   document.querySelector("#city").innerHTML =response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
-  document.querySelector("#weather-description").innerHTML = response.data.weather[0].main;
+  document.querySelector("#weather-description").innerHTML = response.data.weather[0].description;
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
   document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
+  document.querySelector("#visibility").innerHTML = response.data.visibility;
 }
 
 // Default city

@@ -11,11 +11,11 @@
    <title>Responsive Weather App</title>
   </head>
   <body>
-    <main> 
       <div class="container">
+      <div class="weather-app-wrapper">
       <div class="weather-app">
 
-         <section id="search-form" class="search-form">
+         <div id="search-form" class="search-form">
           <form class = "search-bar" id="search-bar">
           <input  id="city-input"  class="city-input" type="text", placeholder="Enter your favourite city" autofocus="on" autocomplete="off" class="form-control shadow-sm" /> 
           <button id="search-button" class="search-button">
@@ -23,7 +23,7 @@
          </button>
         </form>
         <div id="date" class="date"></div>
-      </section>
+      </div>
 
   <h1>
     <div id="city" class="city"></div>
@@ -39,14 +39,37 @@
           <a href="#" class="fahrenheit-link" id="fahrenheit-link">°F </a>  
         </span> 
       </h2>
-        
-        <ul>
-          <li><strong>Feels like:</strong> <span id="feels-like" class="feels-like"></span>°C</li>
-          <li><strong>Humidity: </strong><span  id="humidity" class="humidity"></span>%</li>
-          <li><strong>Wind: </strong><span id="wind" class="wind"></span>km/h</li>
-        </ul>
-  <br />
+      
+      <div id="weather-details" class="weather-details">
+      <div class="row"> 
+      <div class="col-6">
+        <i class="fa-solid fa-temperature-half"></i>
+        <strong>Feels like:</strong> 
+        <span id="feels-like" class="feels-like"></span>°C
+      </div>
 
+      <div class="col-6">
+        <i class="fa-solid fa-droplet"></i>
+        <strong>Humidity:</strong> 
+        <span  id="humidity" class="humidity"></span>%
+      </div>
+
+      <div class="col-6">
+        <i class="fa-solid fa-wind"></i>
+        <strong>Wind:</strong> 
+        <span id="wind" class="wind"></span>km/h
+      </div>
+
+      <div class="col-6">
+        <i class="fa-solid fa-eye"></i>
+        <strong>Visibility:</strong> 
+        <span id="visibility" class="visibility"></span>
+      </div>
+      </div>
+      <br />
+   </div>
+   
+  
   <h3>
   <div class="row">
     <div class="col-2">
@@ -84,19 +107,18 @@
       <div class="column"> <img src="image/sun.png" width="40"></div>
       <div class="column">18°C - 28°F</div>
     </div>
-
   </div>
 </h3>
 
-   </div>
-  </div>
+</div>
+<small>
+<a  href="https://github.com/jerichonina/my-weather-app/tree/main"  target="blank">Open source code</a>
+by Jericho Li
+</small>
+</div>
+</div>
 
-  <div class="open-source-code">
-    <a  href="https://github.com/jerichonina/my-weather-app/tree/main"  target="blank">Open source code</a>
-    <span>by Jericho Li</span>
-  </div>
-  </main>
-</body>
 <script src="src/index.js"></script>
+</body>
 </html>
 
