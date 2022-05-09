@@ -44,7 +44,7 @@ function showWeatherCondition(response) {
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
   document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
-  document.querySelector("#visibility").innerHTML = response.data.visibility;
+  document.querySelector("#pressure").innerHTML = response.data.main.pressure;
 }
 
 // Default city
