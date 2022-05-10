@@ -65,6 +65,7 @@ h1 {
 
 .weather-description {
   font-size: 20px;
+  text-transform: capitalize;
 }
 
 .weather-widget {
