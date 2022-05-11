@@ -39,15 +39,25 @@ li.innerHTML = formatDate(currentTime);
 // Display weather condition
 function showWeatherCondition(response) {
   console.log(response.data);
-  document.querySelector("#city").innerHTML =response.data.name;
-  document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
-  document.querySelector("#weather-description").innerHTML = response.data.weather[0].description;
-  document.querySelector("#humidity").innerHTML = response.data.main.humidity;
-  document.querySelector("#wind").innerHTML = response.data.wind.speed;
-  document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
-  document.querySelector("#pressure").innerHTML = response.data.main.pressure;
-
+  
+  let cityName = document.querySelector("#city");
+  let cityTemperature = document.querySelector("#temperature");
+  let cityWeatherDescription = document.querySelector("#weather-description");
+  let cityHumidity = document.querySelector("#humidity");
+  let cityWind = document.querySelector("#wind");
+  let cityFeelsLike = document.querySelector("#feels-like");
+  let cityPressure = document.querySelector("#pressure");
   let weatherWidget = document.querySelector("#weather-widget");
+  
+  let celsiusTemperature = response.data.main.temp;
+   
+  cityName.innerHTML = response.data.name;
+  cityTemperature.innerHTML = Math.round(celsiusTemperature);
+  cityWeatherDescription.innerHTML = response.data.weather[0].description;
+  cityHumidity.innerHTML = response.data.main.humidity;
+  cityWind.innerHTML = response.data.wind.speed;
+  cityFeelsLike.innerHTML = Math.round(response.data.main.feels_like);
+  cityPressure.innerHTML = response.data.main.pressure;
   weatherWidget.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -69,27 +79,21 @@ function searchCity(event) {
   defaultCity(city);
 }
 
-defaultCity ("Hong Kong");
+
+// °C / °F
+function showFahrenheit(event) {
+  event.preventDefault();
+  let cityTemperature = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  cityTemperature.innerHTML = Math.round (fahrenheitTemperature);
+}
+
+let celsiusTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", searchCity);
 
-// °C / °F
-function celsius(event) {
-  event.preventDefault();
-  let celsiusTemperature = document.querySelector("#temperature");
-  celsiusTemperature.innerHTML = 26;
-}
-
-
-function fahrenheit(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = document.querySelector("#temperature");
-  fahrenheitTemperature.innerHTML = Math.round((26 * 9) / 5 + 32);
-}
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", celsius);
-
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", fahrenheit);
+fahrenheitLink.addEventListener("click", showFahrenheit);
+
+defaultCity ("Hong Kong");
