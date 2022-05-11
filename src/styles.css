@@ -75,10 +75,6 @@ h2 {
   margin-bottom:40px;
 }
 
-.weather-widget {
- 
-}
-
 .temperature{
   font-size: 60px;
   vertical-align:sub;
@@ -92,6 +88,14 @@ h2 {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.fahrenheit-link {
+  color:#63656d;
 }
 
 .weather-details{
