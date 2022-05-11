@@ -48,8 +48,8 @@ function showWeatherCondition(response) {
   let cityFeelsLike = document.querySelector("#feels-like");
   let cityPressure = document.querySelector("#pressure");
   let weatherWidget = document.querySelector("#weather-widget");
-  
-  let celsiusTemperature = response.data.main.temp;
+
+  celsiusTemperature = response.data.main.temp;
    
   cityName.innerHTML = response.data.name;
   cityTemperature.innerHTML = Math.round(celsiusTemperature);
@@ -84,8 +84,20 @@ function searchCity(event) {
 function showFahrenheit(event) {
   event.preventDefault();
   let cityTemperature = document.querySelector("#temperature");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  cityTemperature.innerHTML = Math.round (fahrenheitTemperature);
+
+  celsiusLink.classList.remove("active");
+  fahrenheitLink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature* 9) / 5 + 32;
+  cityTemperature.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function showCelsius (event) {
+  event.preventDefault();
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  let cityTemperature = document.querySelector("#temperature");
+  cityTemperature.innerHTML = Math.round(celsiusTemperature);
 }
 
 let celsiusTemperature = null;
@@ -95,5 +107,8 @@ form.addEventListener("submit", searchCity);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", showCelsius);
 
 defaultCity ("Hong Kong");
