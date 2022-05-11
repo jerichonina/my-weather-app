@@ -38,6 +38,7 @@ li.innerHTML = formatDate(currentTime);
 
 // Display weather condition
 function showWeatherCondition(response) {
+  console.log(response.data);
   document.querySelector("#city").innerHTML =response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
   document.querySelector("#weather-description").innerHTML = response.data.weather[0].description;
@@ -45,6 +46,12 @@ function showWeatherCondition(response) {
   document.querySelector("#wind").innerHTML = response.data.wind.speed;
   document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
   document.querySelector("#pressure").innerHTML = response.data.main.pressure;
+
+  let weatherWidget = document.querySelector("#weather-widget");
+  weatherWidget.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 // Default city

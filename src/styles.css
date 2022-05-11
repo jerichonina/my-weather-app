@@ -64,13 +64,8 @@ h1 {
 }
 
 .weather-description {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: capitalize;
-}
-
-.weather-widget {
-  padding:8px;
-  vertical-align:top;
 }
 
 h2 {
@@ -80,14 +75,19 @@ h2 {
   margin-bottom:40px;
 }
 
+.weather-widget {
+ 
+}
+
 .temperature{
   font-size: 60px;
+  vertical-align:sub;
 }
 
 .temperature-icon {
   position:relative;
   font-size:16px;
-  top:-34px;
+  top:-30px;
 }
 
 a {
