@@ -87,16 +87,17 @@ h2 {
 }
 
 .active {
-  text-decoration: none;
-  color:#2f323a;
+  color:#181a1f;
   cursor:default;
 }
 
-.fahrenheit-link {
+a {
   text-decoration: none;
-  cursor:default;
 }
 
+a:hover {
+  text-decoration: underline;
+}
 
 .weather-details{
   font-size:15px;
