@@ -110,9 +110,21 @@ a:hover {
 
 
 h3 {
-  font-size: 13px;
   text-align: center;
-  line-height: 35px;
+  line-height: 30px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #43464e;
+}
+
+.weather-forecast-date {
+  opacity: 0.6;
+  font-size:13px;
+}
+
+.weather-forecast-max, .weather-forecast-min {
+  font-size:13px;
+}
+
+.weather-forecast-min {
+  opacity:0.6;
 }

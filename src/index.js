@@ -27,8 +27,7 @@ function formatDate(date){
     let day = days[currentDay];
     let month = months[currentMonth];
 
-    return `${day}, ${month} ${currentDate}  ${currentHours}:${currentMinutes}` ;
-    
+    return `${day}, ${month} ${currentDate}  ${currentHours}:${currentMinutes}` ; 
 }
 
 let li = document.querySelector("#date");
