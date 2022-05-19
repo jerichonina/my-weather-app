@@ -21,14 +21,16 @@ function formatDate(date){
         "Saturday",
     ];
 
+    
     let currentMonth = date.getMonth();
     let months =["January","February","March","April","May","June","July","August","September","October","November","December"];
-
+    
     let day = days[currentDay];
     let month = months[currentMonth];
 
     return `${day}, ${month} ${currentDate}  ${currentHours}:${currentMinutes}` ; 
 }
+
 
 let li = document.querySelector("#date");
 let currentTime = new Date();
@@ -47,7 +49,9 @@ function showWeatherCondition(response) {
   let cityFeelsLike = document.querySelector("#feels-like");
   let cityPressure = document.querySelector("#pressure");
   let weatherWidget = document.querySelector("#weather-widget");
-
+  
+  getForecast(response.data.coord);
+ 
   celsiusTemperature = response.data.main.temp;
    
   cityName.innerHTML = response.data.name;
@@ -62,7 +66,15 @@ function showWeatherCondition(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
+  
 
+  function getForecast(coordinates) { 
+  console.log(coordinates)
+  let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
+  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);  
+}
+  
 // Default city
 function defaultCity (city) {
   let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
