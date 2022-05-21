@@ -103,7 +103,7 @@ function defaultCity (city) {
    console.log(coordinates);
    let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
    let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
-   axois.get(apiUrl).then(displayForecast);
+   axios.get(apiUrl).then(displayForecast);
  }
 
 // Display current city
