@@ -37,6 +37,31 @@ let currentTime = new Date();
 
 li.innerHTML = formatDate(currentTime);
 
+// Display weather forecast
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`; 
+
+  let days = ["Sat","Sun","Mon","Tue","Wed","Thu"];
+  days.forEach(function(day){
+    forecastHTML = forecastHTML +   `
+     <div class="col-2">
+        <div class="weather-forecast-date">${day}</div>
+        <div class="weatherForecastIcon"><img src="" width="35"></div>
+        <div class="weather-forecast-temperature">
+          <span class="weather-forecast-max">28°</span>
+          <span class="weather-forecast-min">18°</span>
+        </div>
+      </div> 
+    `;
+  })
+ 
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+
 // Display weather condition
 function showWeatherCondition(response) {
   console.log(response.data);
@@ -71,7 +96,7 @@ function showWeatherCondition(response) {
   function getForecast(coordinates) { 
   console.log(coordinates)
   let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
-  let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=22.2855&lon=114.1577&appid=${apiKey}&units=metric`;
   console.log(apiUrl);  
 }
   
@@ -123,3 +148,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", showCelsius);
 
 defaultCity ("Hong Kong");
+displayForecast();
