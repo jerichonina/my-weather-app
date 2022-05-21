@@ -42,7 +42,7 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`; 
-
+ 
   let days = ["Sat","Sun","Mon","Tue","Wed","Thu"];
   days.forEach(function(day){
     forecastHTML = forecastHTML +   `
@@ -61,8 +61,7 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
-
-// Display weather condition
+// Show weather condition of current city
 function showWeatherCondition(response) {
   console.log(response.data);
   
@@ -74,9 +73,7 @@ function showWeatherCondition(response) {
   let cityFeelsLike = document.querySelector("#feels-like");
   let cityPressure = document.querySelector("#pressure");
   let weatherWidget = document.querySelector("#weather-widget");
-  
-  getForecast(response.data.coord);
- 
+
   celsiusTemperature = response.data.main.temp;
    
   cityName.innerHTML = response.data.name;
@@ -90,23 +87,24 @@ function showWeatherCondition(response) {
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-}
-  
 
-  function getForecast(coordinates) { 
-  console.log(coordinates)
-  let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=22.2855&lon=114.1577&appid=${apiKey}&units=metric`;
-  console.log(apiUrl);  
+  showForecast(response.data.coord);
 }
-  
+
 // Default city
 function defaultCity (city) {
   let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showWeatherCondition);
-  console.log(apiUrl);
 }
+
+// Show weather forecast in the next 6 days
+ function showForecast(coordinates) {
+   console.log(coordinates);
+   let apiKey = "fc81915063c1c948e13c1b9f6ba1e112";
+   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+   axois.get(apiUrl).then(displayForecast);
+ }
 
 // Display current city
 function searchCity(event) {
@@ -114,7 +112,6 @@ function searchCity(event) {
   let city = document.querySelector("#city-input").value;
   defaultCity(city);
 }
-
 
 // °C / °F
 function showFahrenheit(event) {
