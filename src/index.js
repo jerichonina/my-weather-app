@@ -51,6 +51,8 @@ function displayForecast(response) {
   let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
+  let cityUV = document.querySelector("#UV");
+  
 
   let forecastHTML = `<div class="row">`; 
   forecast.forEach(function(forecastDay, index){
@@ -71,8 +73,9 @@ function displayForecast(response) {
             forecastDay.temp.min
           )}°</span>
         </div>
-      </div> 
+     </div> 
     `;
+    cityUV.innerHTML = forecastDay.uvi;
     }
   });
  
@@ -90,7 +93,6 @@ function showWeatherCondition(response) {
   let cityHumidity = document.querySelector("#humidity");
   let cityWind = document.querySelector("#wind");
   let cityFeelsLike = document.querySelector("#feels-like");
-  let cityPressure = document.querySelector("#pressure");
   let weatherWidget = document.querySelector("#weather-widget");
 
   celsiusTemperature = response.data.main.temp;
@@ -101,7 +103,6 @@ function showWeatherCondition(response) {
   cityHumidity.innerHTML = response.data.main.humidity;
   cityWind.innerHTML = response.data.wind.speed;
   cityFeelsLike.innerHTML = Math.round(response.data.main.feels_like);
-  cityPressure.innerHTML = response.data.main.pressure;
   weatherWidget.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
