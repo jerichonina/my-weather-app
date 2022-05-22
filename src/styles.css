@@ -3,7 +3,6 @@
   margin:5px auto;
 }
 .weather-app {
-  min-height: 100vh;
   background-color:#FFF8F3;
   padding: 8px;
   border: 1.5px solid rgb(219, 216, 216);
@@ -49,19 +48,16 @@ form:hover {
 .date{
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding:8px;
-  margin:0;
   color: rgb(122, 119, 119);
 }
 
 h1 {
-  margin:30px auto;
+  margin:28px auto;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 40px;
   color:#43464e;
   line-height:35px;
-  margin-bottom:10px;
 }
 
 .weather-description {
@@ -74,7 +70,6 @@ h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   color:#1C6DD0;
-  margin-bottom: 20px;
 }
 
 .temperature{
