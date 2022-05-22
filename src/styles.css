@@ -52,7 +52,7 @@ form:hover {
 }
 
 h1 {
-  margin:28px auto;
+  margin:26px auto;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 40px;
@@ -70,6 +70,8 @@ h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   color:#1C6DD0;
+  margin-bottom:-15px;
+  margin-top:-25px;
 }
 
 .temperature{
@@ -144,7 +146,7 @@ h3 {
   line-height: 25px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #43464e;
-  margin-top:25px;
+  margin-top:5px;
 }
 
 .weather-forecast-date, .weather-forecast-max, .weather-forecast-min {
