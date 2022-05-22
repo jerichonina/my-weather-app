@@ -47,6 +47,7 @@ form:hover {
 }
 
 .date{
+  text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding:8px;
   margin:0;
