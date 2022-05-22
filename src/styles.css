@@ -101,23 +101,18 @@ a:hover {
   text-decoration: underline;
 }
 
-.weather-details{
-margin-left: 12px;
-margin-right:12px;
-}
+.border {
+  border-radius: 20px;
+  border:0.8px solid rgb(61, 58, 58);
+  box-shadow:1px 2px 2px rgb(148, 146, 146) ;
 
+}
 .feels-like-temp, .humidity-level, .UV-index, .wind-speed {
-margin-bottom:15px;
-padding:5px;
-background-color: transparent;
-border-radius: 10px;
-border:1px solid rgb(179, 175, 175);
-box-shadow:1px 1px 1.5px rgb(167, 166, 166) ;
-font-size:16px;
-text-align: center;
-font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-color: #575a63;
-line-height: 30px;
+  font-size:16px;
+  text-align: center;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #575a63;
+  line-height: 30px;
 }
 
 .forecast-header {
@@ -138,7 +133,7 @@ h3 {
   line-height: 25px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #43464e;
-  margin-top:20px;
+  margin-top:25px;
 }
 
 .weather-forecast-date, .weather-forecast-max, .weather-forecast-min {
