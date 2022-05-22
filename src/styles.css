@@ -6,7 +6,7 @@
   min-height: 100vh;
   background-color:#FFF8F3;
   padding: 8px;
-  border: 1.5px solid rgb(240, 240, 240);
+  border: 1.5px solid rgb(219, 216, 216);
   border-radius: 10px;
 }
 
@@ -113,6 +113,18 @@ a:hover {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #575a63;
   line-height: 30px;
+}
+
+.icon1, .icon2 {
+  color:rgb(88, 170, 238);
+}
+
+.icon3{
+   color:rgb(165, 127, 21);
+}
+
+.icon4 {
+  color:rgb(146, 136, 122);
 }
 
 .forecast-header {
