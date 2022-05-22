@@ -64,12 +64,12 @@ function displayForecast(response) {
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <div class="weatherForecastIcon"><img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
-        }@2x.png" alt="weather-forecast-icon"width="50"></div>
+        }@2x.png" alt="weather-forecast-icon"width="45"></div>
         <div class="weather-forecast-temperature">
-          <span class="weather-forecast-max">H: ${Math.round(
+          <span class="weather-forecast-max">H:${Math.round(
             forecastDay.temp.max
           )}°</span>
-          <span class="weather-forecast-min">L: ${Math.round(
+          <span class="weather-forecast-min">L:${Math.round(
             forecastDay.temp.min
           )}°</span>
         </div>

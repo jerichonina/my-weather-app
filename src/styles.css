@@ -141,12 +141,9 @@ h3 {
   margin-top:20px;
 }
 
-.weather-forecast-date {
+.weather-forecast-date, .weather-forecast-max, .weather-forecast-min {
   font-size:13px;
-}
-
-.weather-forecast-max, .weather-forecast-min {
-  font-size:13px;
+  text-align: center;
 }
 
 .weather-forecast-min {
