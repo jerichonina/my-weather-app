@@ -74,7 +74,7 @@ h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   color:#1C6DD0;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .temperature{
@@ -101,21 +101,23 @@ a:hover {
   text-decoration: underline;
 }
 
+.weather-details{
+margin-left: 12px;
+margin-right:12px;
+}
 
-.card {
-margin-bottom: 8px;
-margin-left:10px;
+.feels-like-temp, .humidity-level, .UV-index, .wind-speed {
+margin-bottom:15px;
+padding:5px;
 background-color: transparent;
 border-radius: 10px;
 border:1px solid rgb(179, 175, 175);
 box-shadow:1px 1px 1.5px rgb(167, 166, 166) ;
-}
-
-.card-title, h6 {
-  font-size:16px;
-  text-align: center;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #575a63;
+font-size:16px;
+text-align: center;
+font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #575a63;
+line-height: 30px;
 }
 
 .forecast-header {
