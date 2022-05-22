@@ -1,19 +1,19 @@
 .weather-app-wrapper {
   max-width: 400px;
-  margin:10px auto;
+  margin:5px auto;
 }
 .weather-app {
   min-height: 100vh;
   background-color:#FFF8F3;
   padding: 8px;
-  border: 1px solid rgb(240, 240, 240);
+  border: 1.5px solid rgb(240, 240, 240);
   border-radius: 10px;
 }
 
 .search-bar {
   display: flex;
   justify-content: space-between;
-  border: 0.8px solid gray;
+  border: 0.8px solid rgb(179, 175, 175);
   border-radius: 100px;
   margin-bottom: 15px;
 }
@@ -58,26 +58,28 @@ h1 {
   margin:30px auto;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 32px;
+  font-size: 40px;
   color:#43464e;
   line-height:35px;
   margin-bottom:10px;
 }
 
 .weather-description {
-  font-size: 16px;
+  font-size: 20px;
   text-transform: capitalize;
+  opacity:0.8;
 }
 
 h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   color:#1C6DD0;
+  margin-bottom: 25px;
 }
 
 .temperature{
   font-size: 65px;
-  vertical-align:sub;
+  vertical-align:middle;
 }
 
 .temperature-icon {
@@ -99,25 +101,45 @@ a:hover {
   text-decoration: underline;
 }
 
-.weather-details{
+
+.card {
+margin-bottom: 8px;
+margin-left:10px;
+background-color: transparent;
+border-radius: 10px;
+border:1px solid rgb(179, 175, 175);
+box-shadow:1px 1px 1.5px rgb(167, 166, 166) ;
+}
+
+.card-title, h6 {
   font-size:16px;
   text-align: center;
-  line-height:50px;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #575a63;
+}
+
+.forecast-header {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+  font-size: 14px;
+  color:#82858a;
+  margin-left:5px;
+}
+
+hr {
+  margin:5px auto;
+}
+
+h3 {
+  text-align: center;
+  font-size:18px;
+  line-height: 25px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #43464e;
   margin-top:20px;
 }
 
-
-h3 {
-  text-align: center;
-  line-height: 30px;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #43464e;
-}
-
 .weather-forecast-date {
-  opacity: 0.6;
   font-size:13px;
 }
 

@@ -31,7 +31,7 @@
   </h1>
   
   <h2>
-      <img src="" alt="weather-widget" class="weather-widget" id="weather-widget" width=100px />
+      <img src="" alt="weather-widget" class="weather-widget" id="weather-widget" width=120px />
         <span class = "temperature" id="temperature"></span>
         <span class="temperature-icon">
           <a href="#" class="active" id="celsius-link">°C</a> 
@@ -39,37 +39,72 @@
           <a href="#" class="fahrenheit-link" id="fahrenheit-link">°F </a>  
         </span> 
    </h2>
-      
-      <div id="weather-details" class="weather-details">
-      <div class="row"> 
-      <div class="col-6">
-        <i class="fa-solid fa-temperature-half"></i>
-        <strong>Feels like: </strong> 
-        <span id="feels-like" class="feels-like"></span>°C
+
+   
+      <div class="row">
+        <div class="col-6">
+         <div class="card" style="width: 10rem;">
+         <div class="card-body">
+         <h5 class="card-title">
+           <i class="fa-solid fa-temperature-half fa-lg"></i>
+           <strong>Feels like: </strong>
+         </h5>
+         <h6 class="card-subtitle mb-2 text-muted">   
+           <span id="feels-like" class="feels-like"></span>°C
+        </h6>
+        </div>
       </div>
+    </div>
 
       <div class="col-6">
-        <i class="fa-solid fa-droplet"></i>
-        <strong>Humidity:</strong> 
-        <span  id="humidity" class="humidity"></span>%
+         <div class="card" style="width: 10rem;">
+         <div class="card-body">
+         <h5 class="card-title">
+           <i class="fa-solid fa-droplet fa-lg"></i>
+           <strong>Humidity:</strong> 
+          </h5>
+          <h6 class="card-subtitle mb-2 text-muted">   
+            <span  id="humidity" class="humidity"></span>%
+          </h6>
+        </div>
       </div>
+    </div>
 
-      <div class="col-6">
-        <i class="fa-solid fa-sun"></i>
-        <strong>UV Index: </strong> 
-        <span id="UV" class="UV"></span>
+     <div class="col-6">
+         <div class="card" style="width: 10rem;">
+         <div class="card-body">
+         <h5 class="card-title">
+           <i class="fa-solid fa-sun fa-lg"></i>
+           <strong>  UV Index: </strong> 
+          </h5>
+           <h6 class="card-subtitle mb-2 text-muted">
+            <span id="UV" class="UV"></span>
+           </h6>
+        </div>
       </div>
+    </div>
 
-      <div class="col-6">
-        <i class="fa-solid fa-wind"></i>
-        <strong>Wind:</strong> 
-        <span id="wind" class="wind"></span>km/h
+     <div class="col-6">
+         <div class="card" style="width: 10rem;">
+         <div class="card-body">
+         <h5 class="card-title">
+           <i class="fa-solid fa-wind fa-lg"></i>
+           <strong> Wind:</strong> 
+          </h5>
+          <h6 class="card-subtitle mb-2 text-muted">
+            <span id="wind" class="wind"></span> km/h
+          </h6>
+        </div>
       </div>
-      </div>
-      <br />
-   </div>
+    </div>
   
-  <h3>
+  </div>   
+
+<h3>
+  <div class="forecast-header">
+    <span><i class="fa-solid fa-calendar-days fa-sm"></i></span>
+    6-Day Forecast</div>
+  <hr />
   <div class="weatherForecast" id="forecast"></div>
 </h3>
 

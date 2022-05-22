@@ -64,12 +64,12 @@ function displayForecast(response) {
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
         <div class="weatherForecastIcon"><img src="http://openweathermap.org/img/wn/${
           forecastDay.weather[0].icon
-        }@2x.png" alt="weather-forecast-icon"width="45"></div>
+        }@2x.png" alt="weather-forecast-icon"width="50"></div>
         <div class="weather-forecast-temperature">
-          <span class="weather-forecast-max">${Math.round(
+          <span class="weather-forecast-max">H: ${Math.round(
             forecastDay.temp.max
           )}°</span>
-          <span class="weather-forecast-min">${Math.round(
+          <span class="weather-forecast-min">L: ${Math.round(
             forecastDay.temp.min
           )}°</span>
         </div>
@@ -101,7 +101,7 @@ function showWeatherCondition(response) {
   cityTemperature.innerHTML = Math.round(celsiusTemperature);
   cityWeatherDescription.innerHTML = response.data.weather[0].description;
   cityHumidity.innerHTML = response.data.main.humidity;
-  cityWind.innerHTML = response.data.wind.speed;
+  cityWind.innerHTML = Math.round(response.data.wind.speed);
   cityFeelsLike.innerHTML = Math.round(response.data.main.feels_like);
   weatherWidget.setAttribute(
     "src",
