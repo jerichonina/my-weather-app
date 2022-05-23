@@ -14,7 +14,7 @@
   justify-content: space-between;
   border: 0.8px solid rgb(179, 175, 175);
   border-radius: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .city-input {
@@ -52,16 +52,16 @@ form:hover {
 }
 
 h1 {
-  margin:26px auto;
+  margin:28px auto;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 40px;
+  font-size: 38px;
   color:#43464e;
   line-height:35px;
 }
 
 .weather-description {
-  font-size: 20px;
+  font-size: 18px;
   text-transform: capitalize;
   opacity:0.8;
 }
@@ -72,6 +72,11 @@ h2 {
   color:#1C6DD0;
   margin-bottom:-15px;
   margin-top:-25px;
+}
+
+.weather-widget {
+  margin-right: -15px;
+
 }
 
 .temperature{
@@ -113,7 +118,7 @@ a:hover {
   text-align: center;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #575a63;
-  line-height: 30px;
+  line-height: 25px;
 }
 
 .icon1, .icon2 {
@@ -121,17 +126,17 @@ a:hover {
 }
 
 .icon3{
-   color:rgb(165, 127, 21);
+   color:#F9D923;
 }
 
 .icon4 {
-  color:rgb(146, 136, 122);
+  color:rgb(116, 107, 95);
 }
 
 .forecast-header {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: left;
-  font-size: 14px;
+  font-size: 13px;
   color:#82858a;
   margin-left:5px;
 }
@@ -143,7 +148,7 @@ hr {
 h3 {
   text-align: center;
   font-size:18px;
-  line-height: 25px;
+  line-height: 23px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #43464e;
   margin-top:5px;
