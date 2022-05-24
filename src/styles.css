@@ -76,7 +76,6 @@ h2 {
 
 .weather-widget {
   margin-right: -15px;
-
 }
 
 .temperature{
@@ -110,15 +109,15 @@ a:hover {
 .border {
   border-radius: 20px;
   border:0.8px solid rgb(61, 58, 58);
-  box-shadow:1px 2px 2px rgb(148, 146, 146) ;
+  box-shadow:1px 1.5px 1.5px rgb(148, 146, 146) ;
 
 }
 .feels-like-temp, .humidity-level, .UV-index, .wind-speed {
-  font-size:16px;
+  font-size:14px;
   text-align: center;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #575a63;
-  line-height: 25px;
+  line-height: 22px;
 }
 
 .icon1, .icon2 {
@@ -136,7 +135,7 @@ a:hover {
 .forecast-header {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: left;
-  font-size: 13px;
+  font-size: 12px;
   color:#82858a;
   margin-left:5px;
 }
