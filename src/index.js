@@ -62,9 +62,9 @@ function displayForecast(response) {
         `
      <div class="col-2">
         <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
-        <div class="weatherForecastIcon"><img src="http://openweathermap.org/img/wn/${
+        <div class="weatherForecastIcon"><img src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${
           forecastDay.weather[0].icon
-        }@2x.png" alt="weather-forecast-icon"width="45"></div>
+        }.svg" alt="weather-forecast-icon"width="40"></div>
         <div class="weather-forecast-temperature">
           <span class="weather-forecast-max">H:${Math.round(
             forecastDay.temp.max
@@ -105,7 +105,7 @@ function showWeatherCondition(response) {
   cityFeelsLike.innerHTML = Math.round(response.data.main.feels_like);
   weatherWidget.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `http://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${response.data.weather[0].icon}.svg`
   );
 
   showForecast(response.data.coord);
