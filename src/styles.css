@@ -102,11 +102,10 @@ a:hover {
 }
 
 .border {
-  border-radius: 20px;
-  border:0.8px solid rgb(61, 58, 58);
-  box-shadow:1px 1.5px 1.5px rgb(148, 146, 146) ;
-
+  border-radius: 60px;
+  box-shadow:1px 1.5px 1.5px rgb(78, 75, 75) ;
 }
+
 .feels-like-temp, .humidity-level, .UV-index, .wind-speed {
   font-size:14px;
   text-align: center;
