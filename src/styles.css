@@ -108,7 +108,7 @@ a:hover {
 }
 
 .feels-like-temp, .humidity-level, .UV-index, .wind-speed {
-  font-size:14px;
+  font-size:15px;
   text-align: center;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(73, 52, 52);
