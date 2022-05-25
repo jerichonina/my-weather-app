@@ -106,7 +106,7 @@ a:hover {
 }
 
 .weather-details {
-  padding:14px;
+  padding:16px;
 }
 
 .border {
@@ -153,6 +153,11 @@ h3 {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(73, 52, 52);
   margin-top:5px;
+}
+
+.weatherForecast {
+  text-align: center;
+  display: block;
 }
 
 .weather-forecast-date, .weather-forecast-max, .weather-forecast-min {
