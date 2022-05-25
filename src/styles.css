@@ -1,18 +1,19 @@
 .weather-app-wrapper {
   max-width: 400px;
-  margin:5px auto;
+  margin:10px auto;
 }
 .weather-app {
-  background-color:#FFF8F3;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/177/original/smile-today.png?1653455051");
+  background-size: 400px;
   padding: 8px;
-  border: 1.5px solid rgb(219, 216, 216);
+  border: 1px solid rgb(219, 216, 216);
   border-radius: 10px;
 }
 
 .search-bar {
   display: flex;
   justify-content: space-between;
-  border: 0.8px solid rgb(179, 175, 175);
+  border: 0.8px solid rgb(78, 75, 75);
   border-radius: 100px;
   margin-bottom: 10px;
 }
@@ -25,14 +26,14 @@
   outline:none;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 18px;
-  color: rgb(135,135,135);
+  color: rgb(78, 59, 59);
 }
 
 button{
   min-width:48px;
   min-height:48px;
-  color:#666a75;
-  border:0.5px solid rgb(255, 255, 255);
+  color:rgb(82, 77, 77);
+  border:0.5px solid transparent;
   border-radius: 60px;
   background-color: transparent;
 }
@@ -42,13 +43,13 @@ i {
 }
 
 form:hover {
-  box-shadow: 1px 2px 3px rgb(167, 166, 166);
+  box-shadow: 1px 1.5px 2px rgb(87, 85, 85);
 }
 
 .date{
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgb(122, 119, 119);
+  color: rgb(100, 84, 84);
 }
 
 h1 {
@@ -56,7 +57,7 @@ h1 {
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 38px;
-  color:#43464e;
+  color:rgb(73, 52, 52);
   line-height:35px;
 }
 
@@ -69,12 +70,12 @@ h1 {
 h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  color:#1C6DD0;
-  margin-bottom:10px;
+  color:#2569e7;
+  margin-bottom:15px;
 }
 
 .temperature{
-  font-size: 65px;
+  font-size: 68px;
   vertical-align:middle;
 }
 
@@ -110,12 +111,12 @@ a:hover {
   font-size:14px;
   text-align: center;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #575a63;
+  color: rgb(73, 52, 52);
   line-height: 22px;
 }
 
 .icon1, .icon2 {
-  color:rgb(88, 170, 238);
+  color:rgb(35, 92, 156);
 }
 
 .icon3{
@@ -130,7 +131,7 @@ a:hover {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: left;
   font-size: 12px;
-  color:#82858a;
+  color:#5d626b;
   margin-left:5px;
 }
 
@@ -143,7 +144,7 @@ h3 {
   font-size:18px;
   line-height: 23px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color: #43464e;
+  color: rgb(73, 52, 52);
   margin-top:5px;
 }
 

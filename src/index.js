@@ -107,7 +107,6 @@ function showWeatherCondition(response) {
     "src",
     `http://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/${response.data.weather[0].icon}.svg`
   );
-
   showForecast(response.data.coord);
 }
 
