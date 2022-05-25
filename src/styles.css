@@ -53,7 +53,7 @@ form:hover {
 }
 
 h1 {
-  margin:28px auto;
+  margin:25px auto;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 38px;
@@ -71,7 +71,12 @@ h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   color:#2569e7;
-  margin-bottom:15px;
+  margin-bottom:10px;
+}
+
+.weather-widget {
+  margin-right:-20px;
+  width:100px;
 }
 
 .temperature{
@@ -83,6 +88,7 @@ h2 {
   position:relative;
   font-size:16px;
   top:-30px;
+  margin-left:-10px;
 }
 
 .active {
@@ -142,7 +148,7 @@ hr {
 h3 {
   text-align: center;
   font-size:18px;
-  line-height: 23px;
+  line-height: 20px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(73, 52, 52);
   margin-top:5px;
