@@ -92,9 +92,8 @@ h2 {
   margin-left:-10px;
 }
 
-.active {
-  color:#2569e7;
-  cursor:default;
+.fahrenheit-link {
+  color:rgb(73, 52, 52);
 }
 
 a {
