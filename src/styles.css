@@ -3,7 +3,7 @@
   margin:10px auto;
 }
 .weather-app {
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/179/original/smile-today.png?1653462943");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/035/173/original/minimalist.png?1653453423");
   background-size: 400px;
   padding: 8px;
   border: 1px solid rgb(219, 216, 216);
@@ -54,7 +54,6 @@ form:hover {
 
 h1 {
   margin:25px auto;
-  margin-bottom: 10px;
   text-align: center;
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 38px;
@@ -71,8 +70,7 @@ h1 {
 h2 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
-  color:#2569e7;
-  margin-bottom:5px;
+  color:rgb(55, 118, 190);
 }
 
 .weather-widget {
@@ -106,6 +104,7 @@ a:hover {
 
 .weather-details {
   padding:16px;
+  margin-top:-15px;
 }
 
 .border {
@@ -122,11 +121,11 @@ a:hover {
 }
 
 .icon1, .icon2 {
-  color:rgb(35, 92, 156);
+  color:rgb(69, 125, 189);
 }
 
 .icon3{
-   color:#F9D923;
+   color:#dda439;
 }
 
 .icon4 {
@@ -148,7 +147,7 @@ hr {
 h3 {
   text-align: center;
   font-size:18px;
-  line-height: 18px;
+  line-height: 16px;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: rgb(73, 52, 52);
   margin-top:5px;
@@ -170,4 +169,7 @@ h3 {
 
 .coder{
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color:rgb(73, 52, 52);
+line-height:10px;
 }
+
