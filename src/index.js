@@ -51,7 +51,8 @@ function displayForecast(response) {
   let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
-  let cityUV = document.querySelector("#UV");
+  let citySunray = document.querySelector("#sunray");
+  citySunray.innerHTML = forecast[0].uvi;
   
 
   let forecastHTML = `<div class="row">`; 
@@ -75,7 +76,6 @@ function displayForecast(response) {
         </div>
      </div> 
     `;
-    cityUV.innerHTML = forecastDay.uvi;
     }
   });
  
