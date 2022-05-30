@@ -52,7 +52,7 @@ function displayForecast(response) {
 
   let forecastElement = document.querySelector("#forecast");
   let citySunray = document.querySelector("#sunray");
-  citySunray.innerHTML = forecast[0].uvi;
+  citySunray.innerHTML = Math.round(forecast[0].uvi);
   
 
   let forecastHTML = `<div class="row">`; 
