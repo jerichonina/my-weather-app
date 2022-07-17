@@ -15,7 +15,7 @@
   justify-content: space-between;
   border: 0.8px solid rgb(90, 87, 87);
   border-radius: 100px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .city-input {
@@ -58,7 +58,7 @@ h1 {
   font-family:Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 38px;
   color:rgb(73, 52, 52);
-  line-height:35px;
+  line-height:30px;
 }
 
 .weather-description {
@@ -87,7 +87,7 @@ h2 {
 .temperature-icon {
   position:relative;
   font-size:16px;
-  top:-30px;
+  top:-20px;
   margin-left:-10px;
 }
 
